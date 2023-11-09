@@ -1,0 +1,86 @@
+.sidebar {
+  position: fixed;
+  width: 220px;
+  background-color: #fff; /* Set sidebar background to white */
+  color: #333; /* Text color */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  border-right: 1px solid #ccc; /* Add a border on the right for separation */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  padding-top: 25%;
+  
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.sidebar-menu a {
+  display: flex; /* Use flexbox to align items vertically */
+  align-items: center; /* Center items vertically */
+  text-decoration: none; /* Remove default text decoration */
+  color: #625f6e;
+  padding: 10px 20px; /* Adjust padding to your preference */
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Montserrat", Helvetica, Arial, serif;
+}
+
+.sidebar-menu a img {
+  width: 20px; /* Adjust the width of the images */
+  height: 20px; /* Adjust the height of the images */
+  margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+.sidebar-menu a:hover {
+  background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  color: #000000; /* Hover text color */
+  border-radius: 5px; /* Add some rounded corners on hover */
+}
+
+.logo {
+  text-align: center; /* Center the text within the logo div */
+  padding: 20px 0; /* Add padding to the top and bottom of the logo */
+}
+
+.logo h1 {
+  margin: 0; /* Remove default margin for the h1 element */
+  color: #E98300; /* Text color for the logo */
+  font-size: 24px; /* Adjust font size to your preference */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+.sub-menu {
+  list-style: none;
+  padding-left: 20px;
+  display: none; /* Hide the sub-menu by default */
+}
+
+.sub-menu.active {
+  display: block; /* Show the sub-menu when active */
+}
+
+.sub-menu li {
+  margin-bottom: 5px;
+}
+
+.sub-menu a {
+  color: #888;
+}
+
+/* Style for the toggle link */
+.submenu-toggle {
+  cursor: pointer;
+  color: #333;
+}
+
+/* Style for the active state of the toggle link */
+.submenu-toggle.active {
+  color: #007BFF;
+}

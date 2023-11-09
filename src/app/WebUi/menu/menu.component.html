@@ -1,0 +1,17 @@
+<div class="sidebar">
+  <div class="logo">
+    <h1>MAT-GESTION</h1>
+  </div>
+  <ul class="sidebar-menu">
+    <li><a [routerLink]="['/dashboard']"><img src="../../../assets/home.png" alt="Dashboard"> Dashboard</a></li>
+    <li><a [routerLink]="['/transacts']"><img src="../../../assets/file.png" alt="Transacts"> Transacts</a></li>
+    <li class="has-submenu" (click)="toggleSubMenu()">
+      <a class="submenu-toggle"><img src="../../../assets/search.png" alt="Products"> Products</a>
+      <ul class="sub-menu" [ngClass]="{'active': isSubMenuActive}">
+        <li><a [routerLink]="['/products', 'manufacturings']">Manufacturings</a></li>
+        <li><a [routerLink]="['/products', 'supliers']">Supliers</a></li>
+        <li><a [routerLink]="['/products', 'materials']">Materials</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>

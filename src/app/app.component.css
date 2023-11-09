@@ -1,0 +1,11 @@
+body {
+  background-color: #f0f0f0; /* Set a light gray background color for the whole page */
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin-left: 220px;
+  background-color: #fff; /* Set background color for the main content */
+}
+
